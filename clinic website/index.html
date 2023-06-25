@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | By Code Info</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        
+        <li><a href="#">
+          <i class="fas fa-home"></i>
+          <span class="nav-item"></span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-user"></i>
+          <span class="nav-item"></span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-wallet"></i>
+          <span class="nav-item"></span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item"></span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-tasks"></i>
+          <span class="nav-item"></span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item"></span>
+        </a></li>
+       
+        <li><a href="" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item"></span>
+        </a></li>
+
+
+        <li><a href="">
+            <i class="fas fa-user"></i>
+            <span class="nav-item"></span>
+          </a></li>
+      </ul>
+      
+    </nav>
+
+   
+
+
+
+
+
+
+
+
+
+
+    <div class="app-container">
+      <div class="app-header">
+        <div class="app-header-left">
+          <span class="app-icon"></span>
+          <p class="app-name">Dashboard</p>
+          <div class="search-wrapper">
+            <input class="search-input" type="text" placeholder="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">
+              <defs></defs>
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="app-header-right">
+          <button class="mode-switch" title="Switch Theme">
+            <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
+              <defs></defs>
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+          </button>
+          <button class="add-btn" title="Add New Project">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" /></svg>
+          </button>
+          <button class="notification-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
+          </button>
+          <button class="profile-btn">
+            <img src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image">
+            <span>Muzammil.</span>
+          </button>
+        </div>
+        <button class="messages-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+        </button>
+      </div>
+      <div class="app-content">
+        
+        
+        <div class="projects-section">
+          <div class="projects-section-header">
+            <p></p>
+            <p class="time"></p>
+          </div>
+          <div class="projects-section-line">
+            <div class="projects-status">
+              <div class="item-status">
+                <span class="status-number"></span>
+                <span class="status-"></span>
+              </div>
+              <div class="item-">
+                <span class="status-number"></span>
+                <span class="status-"></span>
+              </div>
+              <div class="item-">
+                <span class="status-number"></span>
+                <span class="status-"> </span>
+              </div>
+            </div>
+            <div class="view-actions">
+              <button class="view-btn list-view" title="List View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
+                  <line x1="8" y1="6" x2="21" y2="6" />
+                  <line x1="8" y1="12" x2="21" y2="12" />
+                  <line x1="8" y1="18" x2="21" y2="18" />
+                  <line x1="3" y1="6" x2="3.01" y2="6" />
+                  <line x1="3" y1="12" x2="3.01" y2="12" />
+                  <line x1="3" y1="18" x2="3.01" y2="18" /></svg>
+              </button>
+              <button class="view-btn grid-view active" title="Grid View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" /></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-boxes jsGridView">
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #fee4cb;">
+                <div class="project-box-header">
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                     
+                    </button>
+              </div>
+            </div>
+            <div class="project-box-content-header">
+            </div>
+            <div class="box-progress-wrapper">
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 0%; background-color: #fee4cb;"></span>
+              </div>
+            </div>
+            
+              
+                
+                    <section class="card_body">
+                      <div class="graph">
+                        <svg class="graph_media" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.4 266.4">
+                          
+                          <g>
+
+                            
+                            <path class="st0" d="M130.5,32.2V0c-53.3,1.1-99,33.5-119.3,79.6l30,11.8C56.7,57.3,90.7,33.3,130.5,32.2z"/>
+                            <path class="st1" d="M133.2,0c-0.9,0-1.8,0-2.7,0v32.2c0.9,0,1.8,0,2.7,0c55.8,0,101,45.2,101,101s-45.2,101-101,101
+                              s-101-45.2-101-101c0-14.9,3.2-29,9-41.7l-30-11.8C4,96,0,114.1,0,133.2c0,73.6,59.6,133.2,133.2,133.2s133.2-59.6,133.2-133.2
+                              S206.7,0,133.2,0z"/>
+                          </g>
+                        </svg>
+                        <div class="knob_data">784<span class="txt_smaller">%</span></div>
+
+                      </div>
+                   
+
+
+
+            <div class="project-box-content-header1">
+              <p class="box-content-header1"> patients</p>
+              <p class="box-content-subheader1"></p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box1">
+            <div class="project-box-header">
+              <div class="more-wrapper">
+                <button class="project-btn-more">
+                 
+                </button>
+              </div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">New patient</p>
+              <P><h5>56</h5></P>
+              <p class="box-content-subheader"></p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header"></p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 80%; background-color: #096c86"></span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="project-box-wrapper2">
+          
+          <div class="project-box2" style="background-color: #ffd3e2;">
+            <div class="project-box-header2">
+              <div class="more-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                    </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-box-content-header2">
+              <p class="box-content-header">Old Patient</p>
+              <P><h6>38</h6></P>
+            </div>
+            <div class="box-progress-wrapper">
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 20%; background-color: #df3670"></span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #c8f7dc;">
+            <div class="project-box-header">
+              <div class="more-wrapper">
+               
+              </div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Team meeting</p>
+              <p class="box-content-subheader"><h4>13:30-14:45</h4>  </p>
+            </div>
+            <div class="box-progress-wrapper">
+              <div class="box-progress-bar">
+              </div>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
+                <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
+                <button class="add-participant" style="color: #34c471;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+<input type="checkbox" id="on-off" hidden>
+
+<div id="switch-container">
+	<div id="toggle-text"></div>
+	<div id="toggle-wrapper">
+		<div id="toggle-button"></div>
+		<div id="toggle-on" class="on-off-icon"></div>
+		<div id="toggle-off" class="on-off-icon"></div>
+	</div>
+</div>            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box4" style="background-color: #d5deff;">
+            <div class="project-box-header">
+              <div class="more-wrapper">
+               
+              </div>
+            </div>
+            <div class="project-box-content-header">
+            </div>
+            <div class="box-progress-wrapper">
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 40%; background-color: #4067f9"></span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="messages-section">
+      <button class="messages-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="15" y1="9" x2="9" y2="15" />
+          <line x1="9" y1="9" x2="15" y2="15" /></svg>
+      </button>
+      <div class="projects-section-header">
+        <p>Client Messages</p>
+      </div>
+      <div class="messages">
+        <div class="message-box">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image">
+          <div class="message-content">
+            <div class="message-header">
+              <div class="name">Stephanie</div>
+              <div class="star-checkbox">
+                <input type="checkbox" id="star-1">
+                <label for="star-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                </label>
+              </div>
+            </div>
+            <p class="message-line">
+I highly recommend the health clinic for their friendly staff, state-of-the-art facilities, and personalized treatment plans            </p>
+            <p class="message-line time">
+              Dec, 12
+            </p>
+          </div>
+        </div>
+        <div class="message-box">
+          <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image">
+          <div class="message-content">
+            <div class="message-header">
+              <div class="name">Mark</div>
+              <div class="star-checkbox">
+                <input type="checkbox" id="star-2">
+                <label for="star-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                </label>
+              </div>
+            </div>
+            <p class="message-line">
+              The health clinic provided me with prompt and efficient service, making my experience comfortable and hassle-free.            </p>
+            <p class="message-line time">
+              Dec, 12
+            </p>
+          </div>
+        </div>
+        <div class="message-box">
+          <img src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image">
+          <div class="message-content">
+            <div class="message-header">
+              <div class="name">David</div>
+              <div class="star-checkbox">
+                <input type="checkbox" id="star-3">
+                <label for="star-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                </label>
+              </div>
+            </div>
+            <p class="message-line">
+              The health clinic exceeded my expectations with their knowledgeable staff, comprehensive services, and compassionate care.            </p>
+            <p class="message-line time">
+              Dec, 12
+            </p>
+          </div>
+        </div>
+        <div class="message-box">
+          <img src="https://images.unsplash.com/photo-1533993192821-2cce3a8267d1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwbW9kZXJufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image">
+          <div class="message-content">
+            <div class="message-header">
+              <div class="name">Jessica</div>
+              <div class="star-checkbox">
+                <input type="checkbox" id="star-4">
+                <label for="star-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                </label>
+              </div>
+            </div>
+            <p class="message-line">
+              A top-notch health clinic that offers exceptional care, expertise, and a patient-centric approach            </p>
+            <p class="message-line time">
+              Dec, 11
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+
+<script  src="/indx.js"></script>
+
+    
+  
+
+
+  
+</body>
+</html>
